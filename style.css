@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/************ Mobile View *************/
+html, body {
+    margin: 0;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+}
+
+.resize {
+    width: 100%;
+    height: auto;
+}
+
+.shrink {
+    width: 100%;
+    height: auto
+}
+
+#gallery {
+    padding: 0.5rem;
+    margin-top: 5.5rem;
+}
+
+#display {
+    background-color: rgb(61, 61, 61);
+    padding: 1rem;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    color: azure;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/************* Tablet View ************/
+
+@media screen and (min-width: 700px) {
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    #gallery {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(2, 1fr);
+    }
+
+    #display {
+        font-size: 2rem;
+    }
+}
+
+/***************** Desktop View *************/
+
+@media screen and (min-width: 950px) {
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    #gallery {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(4, 1fr);
+    }
+
+    #display {
+        font-size: 2rem;
+    }
+}
